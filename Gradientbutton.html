@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <title>Gradient Button Demo</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-size: 40px;
+      }
+      button {
+        background: linear-gradient(
+          -225deg,
+          #2cd8d5 55%,
+          #c5c1ff 40%,
+          #ffbac3 70%
+        );
+        color: #fff;
+        transition: 0.2s;
+        padding: 30px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        margin: 60px auto;
+        display: block;
+        width: 20%;
+        font-weight: bold;
+        font-size: 28px;
+        box-shadow:  0 0 2px rgba(88, 88, 88, 0.822);
+        cursor: pointer;
+      }
+      button:hover {
+        background: linear-gradient(
+          -225deg,
+          #c5c1ff 56%,
+          #ffbac3 40%,
+          #2cd8d5 60%
+        );
+        color: #fff;
+        transition: 0.2s;
+        box-shadow: 0 5px 10px 2px #ffbac3;
+        transition: box-shadow 0.2s ease-in-out;
+      }
+      @media (max-width: 992px) {
+        button {
+          width: 25%;
+        }
+      }
+      @media (max-width: 742px) {
+        button {
+          width: 30%;
+        }
+      }
+      @media (max-width: 620px) {
+        button {
+          width: 40%;
+        }
+      }
+      @media (max-width: 465px) {
+        button {
+          width: 55%;
+        }
+      }
+      @media (max-width: 360px) {
+        button {
+          width: 70%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gradient Button Hover Effects</h1>
+    <button>Hover Me</button>
+  </body>
+</html>
